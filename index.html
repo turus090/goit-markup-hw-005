@@ -49,9 +49,10 @@
     <section class="section hero">
       <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button">Заказать услугу</button>
+        <button data-modal-open type="button" class="button">Заказать услугу</button>
       </div>
     </section>
+
     <!--Our advantages-->
     <section class="advantag">
       <div class="container">
@@ -110,12 +111,21 @@
         <ul class="doin-list">
           <li class="doin-list-item">
             <img src="./imajes/table.jpg" alt="клавиатура" height="294" width="370" />
+            <div class="doin-thumb">
+              <p class="thumb-text">Десктопные приложения</p>
+            </div>
           </li>
           <li class="doin-list-item">
             <img src="./imajes/phone.jpg" alt="телефон" height="294" width="370" />
+            <div class="doin-thumb">
+              <p class="thumb-text">Мобильные приложения</p>
+            </div>
           </li>
           <li class="doin-list-item">
             <img src="./imajes/keyboard.jpg" alt="планшет" height="294" width="370" />
+            <div class="doin-thumb">
+              <p class="thumb-text">Дизайнерские решения</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -363,6 +373,19 @@
       </div>
     </div>
   </footer>
+  <!--MODAL-->
+  <div data-modal class="backdrop is-hidden">
+    <div class="modal">
+      <button data-modal-close class="close-button">
+        <svg width="11px" height="11px">
+          <use href="./imajes/sprite.svg#icon-close-black"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
 </body>
+
 
 </html>
