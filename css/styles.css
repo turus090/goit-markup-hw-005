@@ -732,7 +732,7 @@ justify-content: center;
 }
 .pro-item:hover .image-text,
 .pro-item:focus .image-text {
-  transform: translate(0, 0);
+  transform: none;
 }
 
 
@@ -748,9 +748,11 @@ justify-content: center;
     padding: 63px 24px;
     margin-top: 0px;
     margin-bottom: 0px;
+    transform: translateY(100%);
+  
     background-color: rgba(33, 150, 243, 0.9);
-    transform: translate(100%, 100%);
-    transition: ransform var(--transition-duration) var(--transition-timing-function);
+  
+    transition: transform var(--transition-duration) var(--transition-timing-function);
 }
 
 
