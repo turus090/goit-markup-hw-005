@@ -179,8 +179,7 @@ margin-right: 50px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ transition: color var(--transition-duration) var(--transition-timing-function);
   
 }
 
@@ -260,6 +259,8 @@ background-size: cover;
   border-radius: 4px;
   border: none;
   cursor: pointer;
+
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .section.hero .button:hover{
@@ -487,7 +488,8 @@ background-color: #188CE8
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 
-  transition: color var(--transition-duration) var(--transition-timing-function);
+  transition: color var(--transition-duration) var(--transition-timing-function),
+              border var(--transition-duration) var(--transition-timing-function);
 }
 
 .clients-icon {
@@ -496,7 +498,7 @@ background-color: #188CE8
 
 .clients-link:hover,
 .clients-link:focus {
-  border-color: var(--brand-color);
+  border: 1px solid var(--brand-color);
   color: var(--brand-color);
 
 }
@@ -549,7 +551,7 @@ background-color: #188CE8
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 
-  transition: var(--transition-duration) var(--transition-timing-function);
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .footer-contacts:hover,
@@ -611,11 +613,12 @@ justify-content: center;
 
   border-radius: 50%;
   
-  transition: color var(--transition-duration) var(--transition-timing-function);
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .social-icon {
   fill: currentColor;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .social-link:hover,
@@ -641,6 +644,8 @@ justify-content: center;
   letter-spacing: 0.03em;
 
   transition: box-shadow var(--transition-duration) var(--transition-timing-function),
+              background-color var(--transition-duration) var(--transition-timing-function),
+              color var(--transition-duration) var(--transition-timing-function);
 }
 
 .projects-item:not(:last-child) {
@@ -687,6 +692,7 @@ justify-content: center;
  .pro-item-link {
   display: inline-block;
   text-decoration: none;
+  transition: box-shadow var(--transition-duration) var(--transition-timing-function);
  }
  
 .pro-item-link:hover,
