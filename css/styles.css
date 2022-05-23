@@ -494,6 +494,7 @@ background-color: #188CE8
 
 .clients-icon {
   fill: currentColor;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .clients-link:hover,
