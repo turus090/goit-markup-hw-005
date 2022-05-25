@@ -491,10 +491,12 @@ background-color: #188CE8
   transition: color var(--transition-duration) var(--transition-timing-function),
               border var(--transition-duration) var(--transition-timing-function);
 }
+/**transition: color var(--transition-duration) var(--transition-timing-function),
+border var(--transition-duration) var(--transition-timing-function);**/
 
 .clients-icon {
   fill: currentColor;
-  transition: fill var(--transition-duration) var(--transition-timing-function);
+ /** transition: fill var(--transition-duration) var(--transition-timing-function);**/
 }
 
 .clients-link:hover,
