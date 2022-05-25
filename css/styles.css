@@ -488,7 +488,7 @@ background-color: #188CE8
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 
-  transition: color var(--transition-duration) var(--transition-timing-function),
+  transition: /**color var(--transition-duration) var(--transition-timing-function),**/
               border var(--transition-duration) var(--transition-timing-function);
 }
 /**transition: color var(--transition-duration) var(--transition-timing-function),
@@ -496,7 +496,7 @@ border var(--transition-duration) var(--transition-timing-function);**/
 
 .clients-icon {
   fill: currentColor;
- /** transition: fill var(--transition-duration) var(--transition-timing-function);**/
+  transition: var(--transition-duration) var(--transition-timing-function);
 }
 
 .clients-link:hover,
@@ -505,6 +505,12 @@ border var(--transition-duration) var(--transition-timing-function);**/
   color: var(--brand-color);
 
 }
+
+/**.clients-icon:hover ,
+.clients-icon:focus {
+  fill: rgba(33, 150, 243, 1); 
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+} **/
 /* Footer */
 .footer-section {
   background-color: #2F303A;
